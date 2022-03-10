@@ -1,0 +1,36 @@
+I) DOWNLOAD THE DATASET
+  The dataset downloaded under the "UCI HAR Dataset" folder
+  
+II) ASSIGN
+  features <- features.txt
+    The data come from accelerometer and gyroscope
+    
+  activities <- activity_labels.txt
+    List of activity performed
+    
+  subject_test <- test/subject_test.txt
+    Test data of 9 volunteers
+    
+  subject_train <- test/subject_train.txt
+    Test data of 21 volunteers
+  
+  FinalData
+    Summarizes TidyData taking the means of each variable for each activity and each subject, after groupped by subject and activity
+    
+ III) MERGE THE DATASET
+  X - created by x_trait and x_test
+  Y - created by y_trait and y_test
+  Subject - created by subject_trait and subject_tract
+  Merged_Data - created by Subject Y and Subject X
+  
+IV) EXTRACTING MEAN AND STANDARD DEVIATION
+  TidyData was created by subsettig Merged_Data in subject and code with the mean and standard deviation measurement for each
+  
+V) LABELS
+  code in TidyData renamed to activities
+  Acc was replaced by Accelerometer
+  Gyro was replaced by Gyroscope
+  BodyBody was replaced by Body
+  Mag in was replaced by Magnitude
+  The character f was replaced by Frequency
+  The character t was replaced by Time
